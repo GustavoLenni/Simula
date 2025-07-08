@@ -1,0 +1,147 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+}
+.Logo img{
+    width: 150px;
+    height: auto;
+}
+.Conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -5%;
+}
+.Mascote img{
+    width: 500px;
+    height: auto;
+}
+.Carrossel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Textos p{
+    width: 400px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.Bolinhas{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 10px;
+}
+.Bolinha{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Bolinha.ativa {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+
+/* buttons */
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.botoes button{
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botoes button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(45, 76, 90, 0.3);
+}
+
+.botoes button:active {
+    transform: translateY(1px);
+}
+
+.botoes p{
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.botao-comecar{
+    background-color: var(--secondary-color);
+    color: white;
+    border: 3px solid rgb(45, 76, 90);
+}
+
+.botao-comecar:hover{
+    background-color: rgb(25, 57, 75);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 76, 90, 0.3);
+}
+
+.botao-comecar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.botao-comecar:hover::before {
+    left: 100%;
+}
+
+.botao-conta{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 3px solid rgb(50, 180, 91);
+}
+
+.botao-conta:hover{
+    background-color: rgba(50, 180, 91, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(50, 180, 91, 0.3);
+}
+
+.botao-conta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(50, 180, 91, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.botao-conta:hover::before {
+    left: 100%;
+}
+
+
+
+
