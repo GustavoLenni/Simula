@@ -1,12 +1,13 @@
 import "../css/home.css";
 import Images from "../assets/images";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const textosCarrossel = [
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page ",
-  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+  "🎯 Desafie-se todos os dias! Transforme seu estudo para o ENEM com atividades práticas, dinâmicas e focadas no que realmente cai na prova.",
+  "📚 Humanas e Exatas na medida certa, A cada desafio, você evolui nas matérias que mais precisa — com exercícios pensados para o ENEM de verdade.",
+  "🔥 Estude como um jogo. Progrida como um campeão. Aqui você aprende de forma leve e divertida, conquistando pontos, medalhas e, o mais importante: resultados!",
 ];
 
 const Home = () => {
@@ -56,12 +57,17 @@ const Home = () => {
       </div>
 
       <div className="botoes">
-        <button className="botao-comecar">
-          <p>Começar Agora</p>
-        </button>
-        <button className="botao-conta">
-          <p>Já Tenho uma Conta</p>
-        </button>
+
+        <div className="botao-comecar">
+          <Link to='/login'>
+            <p>Começar Agora</p>
+          </Link>
+        </div>
+        <div className="botao-conta">
+          <Link to='/login'>
+            <p>Já Tenho uma Conta</p>
+          </Link> 
+        </div>
       </div>
     </div>
   );

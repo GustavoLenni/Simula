@@ -1,7 +1,10 @@
-import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from './pages/home';
 import Login from './pages/login';
+import images from "./assets/images";
+
+import "./css/nav.css";
 
 export default function AppRoutes() {
     const location = useLocation();
@@ -17,11 +20,7 @@ export default function AppRoutes() {
             {!isNoLayout && (
                 <div className="header">
                     <div className="nav">
-                        {/* <img src={images.logoIcon} className="imagemLogo" alt="Logo" /> */}
-                        <div className="paginas">
-                            <Link className="navInicio navItem" to="/">Home</Link>
-                            <Link className="navInicio navItem" to="/">Login</Link>
-                        </div>
+                        <img alt="Logo" src={images.LogoNome}></img>
                     </div>
                 </div>
             )}
