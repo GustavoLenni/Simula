@@ -1,0 +1,68 @@
+.mascote img{
+    width: 500px;
+    height: auto;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+.Login{
+    margin-top: 7%;
+}
+.texto{
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.inputs {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* espaçamento entre os inputs */
+}
+
+.inputs input {
+    width: 100%;
+    max-width: 320px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px solid #83BD95;
+    background-color: var(--primary-color);
+    color: #00511A;
+    padding: 12px 14px;
+    font-size: 16px;
+    outline: none;
+    transition: 
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+/* Placeholder mais moderno */
+.inputs input::placeholder {
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #00511A;
+    transition: opacity 0.25s ease;
+}
+
+/* Efeito ao passar o mouse */
+.inputs input:hover {
+    background-color: #2cc75d;
+    border-color: #3e9b5b;
+}
+/* Efeito ao passar o mouse */
+.inputs input:active {
+    background-color: #27db60;
+    border-color: #347548;
+}
+
+
+.textos{
+    margin-top: 5%;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    width: 400px;
+}
